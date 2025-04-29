@@ -1,0 +1,28 @@
+:root{
+    --imagem-fundo: url("./imgs/imagemFundo.png")
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(24, 24, 24);
+    background-image: var(--imagem-fundo) ;
+}
+
+header{
+    display: flex
+}
+header h1{
+    color: white;
+}
+.menu{
+    display: flex;
+    margin-left: 10vw;
+    gap: 10%;
+}
+.menu h2{
+    color: white;
+}
