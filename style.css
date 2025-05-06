@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 :root{
-    --imagem-fundo: url("./imgs/imagemFundo.png")
+    --imagem-fundo: url("./imgs/imagemFundo.png");
+    --font: 'Playfair Display', serif;
 }
 *{
     padding: 0;
@@ -11,6 +13,7 @@ body{
     background-color: rgb(24, 24, 24);
     background-image: var(--imagem-fundo) ;
     padding: 2vw;
+    display: block;
 }
 
 header{
@@ -20,22 +23,58 @@ header{
 }
 header h1{
     color: white;
+    font-size: 4vh;
+    font-family: var(--font);
 }
 .menu{
     display: flex;
-    /* margin-left: 10vw; */
-    gap: 10%;
-    width: 20vw;
-    background-color: aquamarine;
+    gap:15%;
+    width: 35vw;
     align-items: center;
-    justify-content: space-between;
+    margin-left: 10vw;
 }
 
 .menu h2{
+    font-family: var(--font);
     color: white;
+    font-size: 3vh;
 }
 .pesquisar{
-    width: 25vw;
-    border-radius: 1vw;
-    /* margin-left: 12vw; */
+    width: 18vw;
+    border-radius: 2vw;
+    height: 6vh;
+    background-color: #D9D9D9;
+    padding-left: 1vw;
+    outline: none;
+    margin-left: 5vw;
+    font-size: 2vh;
+}
+main{
+    /* background-color: aquamarine; */
+    padding-top: 30vh;
+    height: 100%;
+}
+
+.titulo{
+    display: none;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+     /* background-color: aquamarine; */
+    position: relative;
+    text-align: center;
+}
+
+.titulo h1{
+    font-size: 16vw;
+    color: white;
+}
+.titulo span{
+    font-size: 20vw;
+    color: white;
+    opacity: 0.3;
+    position:absolute;
+    top: -45%;
+
+
 }
