@@ -8,22 +8,34 @@
     <script src="./filmes.js" defer> </script>
 </head>
 <body>
-    <header>
-        <h1>CineFlow</h1>
-        <div class="menu">
-            <h2>Home</h2>
-            <h2>All movies</h2>
-            <h2> Generes</h2>
-        </div>
-        <input type="text" class="pesquisar">
-        <img src="./imgs/search.png" id="lupa">
-    </header>
-    <main>
-        <div class="titulo" id="titulo">
+    <aside id="menuOculto" class="menuOculto">
+        <a href="" class="sair" onclick="sairMenu()"> &times;</a>
+        <a href=""> Home </a>
+        <a href=""> Home </a>
+        <a href=""> Home </a>
+        <a href=""> Home </a>
+        <a href=""> Home </a>
+    </aside>
+    <section id="principalInicial" class="principalInicial">
+        <header>
+            <p  class="entrarMenu" onclick="entrarMenu()"> &#9776;</p>
             <h1>CineFlow</h1>
-            <span>CineFlow</span>
-        </div>
-    </main>
+            <div class="menu">
+                <h2>Home</h2>
+                <h2>All movies</h2>
+                <h2> Generes</h2>
+            </div>
+            <input type="text" class="pesquisar">
+            <img src="./imgs/search.png" id="lupa">
+        </header>
+        <main>
+            <div class="titulo" id="titulo">
+                <h1>CineFlow</h1>
+                <span>CineFlow</span>
+            </div>
+         
+        </main>
+    </section>
     
 </body>
 </html>

@@ -14,6 +14,7 @@ body{
     background-image: var(--imagem-fundo) ;
     padding: 2vw;
     display: block;
+    font-family: var(--font);
 }
 
 header{
@@ -24,7 +25,6 @@ header{
 header h1{
     color: white;
     font-size: 4vh;
-    font-family: var(--font);
 }
 .menu{
     display: flex;
@@ -35,7 +35,6 @@ header h1{
 }
 
 .menu h2{
-    font-family: var(--font);
     color: white;
     font-size: 3vh;
 }
@@ -56,8 +55,8 @@ main{
 }
 
 .titulo{
-    display: none;
-    /* display: flex; */
+    /* display: none; */
+    display: flex;
     align-items: center;
     justify-content: center;
      /* background-color: aquamarine; */
@@ -75,6 +74,54 @@ main{
     opacity: 0.3;
     position:absolute;
     top: -45%;
+}
 
+.menuOculto{
+    display: none;
+    height: 100%;
+    width: 20%;
+    background-color: #c5c5c550;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    /* serve para quebrar o conteudo que exede o tamanho da div */
+    text-overflow: ellipsis;
+    padding-left: 2vw;
+    padding-top: 4vh;
+}
 
+.menuOculto a{
+    text-decoration: none;
+    display: block;
+    padding: 2vh;
+    color: white;
+    transition: 0.3s; 
+}
+
+.menuOculto a:hover{
+    color: white;
+}
+.sair{
+    position: absolute;
+    top: 0;
+    right: 2vw;
+    font-size: 3rem;
+    
+}
+.entrarMenu{
+    font-size: 2rem;
+    color: white;
+}
+.principalInicial{
+    transition: 0.5s;
+}
+.principalInicial a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.principalFinal{
+    padding-left: 20vw;
 }
