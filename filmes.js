@@ -8,6 +8,7 @@ function entrarMenu(){
     const principal =  document.getElementById("principalInicial")
 
     menuOculto.style.display="block"
+    principal.style.marginLeft = "20vw"
     
 }
 function sairMenu(){
